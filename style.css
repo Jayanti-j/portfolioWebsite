@@ -1,0 +1,149 @@
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.herosection{
+    width: 100%;
+    background-color: black;
+    height: 650px;
+    margin:0;
+    position: relative;
+    
+}
+*{
+    text-align: center;
+}
+body{
+    display: block;
+    background-color: black;
+    color: white;
+}
+.fascinate-inline-regular {
+    font-family: "Fascinate Inline", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .midContent{
+    
+    font-family: "Fascinate Inline", system-ui;
+    margin: 15px auto 2px auto;
+    font-size: 7rem;
+  }
+  .cutie{
+    margin: 50px;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border-width: 20px;
+    border-color: palevioletred;
+    border-style: solid;
+  }
+  .midContentLine{
+    
+    font-weight: 400;
+    margin: 10px;
+    size: 25px;
+  }
+  .pro{
+    text-decoration: underline;
+  }
+  .profile_pic{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+  }
+  .intro{
+    margin: 30px;
+    
+  }
+  .introText{
+    position: relative;
+    font-weight: 400;
+    margin: 35px auto 65px auto;
+    font-size: 1.3rem;
+    position: relative;
+    
+  }
+.hello{
+    font-family: "Fascinate Inline", system-ui;
+    font-size: 3rem;
+    
+}
+.img_skills1{
+  height: 140px;
+  width: 150px;
+  border-radius: 10px;
+}
+.img_skills2{
+  height: 200px;
+  width: 120px;
+  border-radius: 10px;
+
+}
+.skill{
+  align-items: center;
+  justify-content: center;
+}
+.gridd{
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-rows: 0.5fr 1fr;
+  gap: 0px;
+  margin: 20px;
+  width: 70%;
+  row-gap: 2rem;
+  margin: auto 300px auto auto;
+
+}
+.design{
+  font-family: "Fascinate Inline", system-ui;
+    font-size: 2rem;
+    
+}
+.contact{
+  margin: 1.5%;
+  align-items: center;
+  justify-content: center;
+
+}
+.btn{
+  font-family: "Roboto", sans-serif;
+  margin: auto 15px auto 15px;
+  background-color: white;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  color: black;
+}
+.btn:hover{
+  background-color: black;
+  color: white;
+}
+.space{
+  margin:200px ;
+}
+.footer_link:hover{
+    color: palevioletred;
+    text-decoration: underline;
+}
+.footer_link{
+  margin: 20px;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+   
+}
+footer{
+    height: 200px;
+    background-color: rgb(148, 255, 225);
+    
+}
+.bottom_container{
+  display: flex;
+   justify-content: center;
+   align-items: center; 
+   height: 150px;
+   text-align: center;
+}
