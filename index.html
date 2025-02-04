@@ -3,78 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <title>Jayanti's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Roboto+Slab:wght@100..900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <!-- Navbar -->
     <nav class="navbar">
         <a href="#" class="logo">Jayanti Gupta</a>
-        <ul>
+        <ul class="nav-links">
             <li><a href="#home">Home</a></li>
-            <li><a href="https://github.com/Jayanti-j">GitHub</a></li>
+            <li><a href="https://github.com/Jayanti-j" target="_blank">GitHub</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="https://www.linkedin.com/in/jayanti-gupta-j/">LinkedIn</a></li>
+            <li><a href="https://www.linkedin.com/in/jayanti-gupta-j/" target="_blank">LinkedIn</a></li>
         </ul>
+        <div class="menu-toggle">&#9776;</div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="herosection"> 
-        <img class="cutie" src="./images/cutie.jpeg" alt="Profile Picture">
-        <h1 class="midContent">I'm Jayanti</h1>
-        <p class="midContentLine">I'm a <span class="pro">pro</span>grammer</p>
+    <section class="hero">
+        <img class="profile-pic" src="./images/cutie.jpeg" alt="Profile Picture">
+        <h1>I'm <span class="highlight">Jayanti</span></h1>
+        <h2>A Passionate <span class="pro">Web Developer</span> & Problem Solver</h2>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <img src="./images/web-development.jpeg" alt="Web Development">
+                <h3>Web Development</h3>
+                <p>Creating functional, beautiful websites with modern technologies.</p>
+            </div>
+            <div class="skill-card">
+                <img src="./images/problem-solving.jpeg" alt="Problem Solving">
+                <h3>Problem Solving</h3>
+                <p>Solving coding challenges and optimizing algorithms.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section class="technologies">
+        <h2 class="section-title">Technologies I Use</h2>
+        <div class="tech-logos">
+            <img src="./images/nodejs-48.png" alt="Node.js">
+            <img src="./images/express-js-64.png" alt="Express.js">
+            <img src="./images/react-100.png" alt="React">
+            <img src="./images/mysql-64.png" alt="MySQL">
+            <img src="./images/postgresql-100.png" alt="PostgreSQL">
+            <img src="./images/html-64.png" alt="HTML">
+            <img src="./images/css-100.png" alt="CSS">
+            <img src="./images/javascript-64.png" alt="JavaScript">
+        </div>
     </section>
     
-    <!-- Intro Section -->
-    <section class="intro">
-        <h2 class="hello">Hello</h2>
-        <p class="introText">
-            Hi, I'm Jayanti Gupta — a Web Developer & Problem Solver!
-        </p>
-        <hr><br>
-        
-        <h2 class="hello">My Skills</h2><br><br>
-
-        <!-- Skills Section -->
-        <div class="gridd">
-            <div><img src="./images/webdev.jpeg" alt="Web Development" class="img_skills"></div>
-            <div>
-                <h3 class="design">Web Development</h3>
-                <p class="introText">I love creating beautiful and functional websites using modern technologies like HTML, CSS, and JavaScript.</p>
-            </div>
-
-            <div><img src="./images/dsa.jpeg" alt="Problem Solving" class="img_skills"></div>
-            <div>
-                <h3 class="design">Problem Solving</h3>
-                <p class="introText">I enjoy solving coding challenges and improving my logical thinking through DSA.</p>
-            </div>
-        </div>
-    </section>
-
     <!-- Contact Section -->
     <section class="contact" id="contact">
-        <h2 class="hello">Get in Touch</h2>
-        <p class="design">I’d love to hear from you! Feel free to reach out for collaborations.</p>
-        <div>
-            <a href="mailto:jayantigupta.489@gmail.com" class="btn">Contact Me</a>
-            <a href="./JayantiGupta_002.pdf" class="btn" target="_blank">Download Resume</a>
-        </div>
+        <h2 class="section-title">Get in Touch</h2>
+        <p>Interested in collaborating? Let's connect!</p>
+        <a href="mailto:jayantigupta.489@gmail.com" class="btn">Contact Me</a>
+        <a href="./resume.pdf" class="btn" target="_blank">Download Resume</a>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="bottom_container">
-            <a class="footer_link" href="https://www.linkedin.com/in/jayanti-gupta-j/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/Jayanti-j" target="_blank" class="footer_link">GitHub</a>
-            <a class="footer_link" href="https://jayanti-j.github.io/portfolioWebsite/" target="_blank">Portfolio</a>
+        <p>&copy; 2025 Jayanti Gupta | All rights reserved.</p>
+        <div class="footer-links">
+            <a href="https://www.linkedin.com/in/jayanti-gupta-j/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/Jayanti-j" target="_blank">GitHub</a>
+            <a href="https://jayanti-j.github.io/portfolioWebsite/" target="_blank">Portfolio</a>
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
