@@ -104,18 +104,20 @@ body {
 
 .btn-primary, .btn-secondary {
   display: inline-block;
-  background-color: palevioletred;
-  color: white;
-  padding: 12px 30px;
-  border-radius: 5px;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 12px 20px;
+  border-radius: 8px;
+  margin: 10px;
   text-decoration: none;
   font-weight: bold;
-  margin-right: 15px;
-  transition: background-color 0.3s ease;
+  transition: 0.3s;
 }
 
 .btn-primary:hover, .btn-secondary:hover {
   background-color: palevioletred;
+  color: white;
+  transform: scale(1.06);
 }
 
 .hero-image {
@@ -219,6 +221,7 @@ body {
   text-align: center;
   transition: transform 0.3s ease-in-out;
   justify-content: center;
+  border: 3px solid palevioletred;
 }
 
 .skill-card:hover {
@@ -229,6 +232,9 @@ body {
   width: 95%;
   height: 240px;
   border-radius: 5%;
+  
+
+  
 }
 
 .skill-card h3 {
