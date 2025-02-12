@@ -163,7 +163,7 @@ body {
 }
 
 .about-text strong {
-  color: #29069eea;
+  color: palevioletred;
   font-weight: 600;
   font-size: 20px;
 }
@@ -191,14 +191,14 @@ body {
 /* Skills Section */
 .skills {
   padding: 100px;
-  background-color: #121212;
+  background-color: #000000;
   color: #fff;
   
 }
 
 .section-title {
   font-size: 3.5rem;
-  margin-bottom: 40px;
+  margin-bottom: 1em;
   animation: slideIn 1s ease-in-out;
   color: palevioletred;
 }
@@ -240,9 +240,9 @@ body {
 
 /* Technologies Section */
 .technologies {
-  padding: 50px;
+  padding: 15em;
   background-color: #121212;
-  min-height: 30vh;
+  min-height: 50vh;
   justify-content: center;
 }
 
@@ -265,16 +265,16 @@ body {
 
 /* Contact Section */
 .contact {
-  padding: 50px;
-  background-color: #f4f4f4;
-  color: black;
-  min-height: 20vh;
+  padding: 10em;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  min-height: 40vh;
 }
 
 .btn {
   display: inline-block;
-  background: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   padding: 12px 20px;
   border-radius: 8px;
   margin: 10px;
@@ -286,6 +286,7 @@ body {
 .btn:hover {
   background: palevioletred;
   color: white;
+  transform: scale(1.06);
 }
 
 /* Footer */
@@ -337,15 +338,17 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  /* Navbar */
   .nav-links {
     display: none;
     flex-direction: column;
     text-align: center;
     position: absolute;
     top: 60px;
+    left: 0;
     background: #333;
     width: 100%;
-    left: 0;
+    padding: 15px 0;
   }
 
   .nav-links.active {
@@ -354,13 +357,49 @@ footer {
 
   .menu-toggle {
     display: block;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
   }
 
-  .skills-container {
+  /* Hero Section */
+  .hero {
     flex-direction: column;
-    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
   }
 
+  .hero-content {
+    flex-direction: column;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero-image {
+    max-width: 80%;
+    margin-top: 20px;
+  }
+
+  .hero-image .profile-pic {
+    width: 200px;
+    height: 200px;
+  }
+
+  /* About Section */
   .about-content {
     flex-direction: column;
     text-align: center;
@@ -368,9 +407,45 @@ footer {
 
   .about-text {
     text-align: center;
+    padding: 0 20px;
   }
 
   .about-image {
     max-width: 100%;
+  }
+
+  /* Skills Section */
+  .skills {
+    padding: 50px 20px;
+  }
+
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-card {
+    width: 90%;
+  }
+
+  /* Technologies Section */
+  .technologies {
+    padding: 50px 20px;
+  }
+
+  /* Contact Section */
+  .contact {
+    padding: 50px 20px;
+  }
+
+  /* Footer */
+  footer {
+    padding: 20px;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 }
